@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+body{
+  background-color:beige;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+html{
+    font-family: 'Italiana', serif;
+}
+
+nav{
+    font-family: 'Italiana', serif;
+    height: 80px;
+}
+
+.header h1{
+    font-size: 50px;
+    font-family: 'Italiana', serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
+    font-size: 20px;
+    width: 80%;
+    color: gray;
+    background-color: transparent;
+    outline: none;
+}
+
+input::placeholder{
+    opacity: .6;
+    color: gray;
+    font-family: 'Montserrat';
+}
+
+form ion-icon{
+    font-size: 20px;
+    opacity: .5;
+    color: gray;
+}
+
+.container{
+  background-color: transparent;
+  max-width: 1000px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+    margin-top: 70px;
+    grid-gap: 5x;
+}
+
+.item{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease box-shadow;
+}
+
+.item:hover{
+  box-shadow: 0px 0px 20px 3px #00000042;
+}
+
+
+.load-more{
+  display: inline-block;
+  margin-top:30px;
+  padding: 20px 50px;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+  font-size: x-large;
+  cursor: pointer;
+  font-family:  'Italiana', serif;;
+}
+
+a.load-more:hover{
+  color: white;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Italiana', serif;
+  background-color: black;
+  color: grey;
+}
+
